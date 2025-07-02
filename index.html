@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neighborhood Detailing</title>
+  </head>
+  <body>
+    <nav id="navbar" class="fugaz text-[#e2b34d] fixed top-0 left-0 w-full z-50 bg-[rgba(10,10,13,0.9)] shadow-md transition-transform duration-300">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="space-x-2">
+          <a href="#">
+            <img class="mb-2 inline max-w-15 h-auto" src="/images/logo_nav.webp"/> 
+            <span class="hidden md:inline text-gray-200 md:text-lg font-bold">Neighborhood Detailing</span>
+          </a>
+        </div>
+        <a class="md:hidden" href="#">
+          <span class="text-gray-200 md:text-lg font-bold">Neighborhood Detailing</span>
+        </a>
+        <!-- Mobile menu toggle button -->
+        <div id="menu-toggle" class="md:hidden text-gray-200 cursor-pointer z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16" />
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+          </svg>
+        </div>
+        <!-- Desktop nav -->
+        <ul class="hidden md:flex space-x-6 text-gray-200">
+          <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+          <li><a href="https://neighborhood-detail.square.site/" target="_blank" class="hover:text-yellow-400">Book</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile menu in flow, BELOW the navbar -->
+    <ul
+      id="mobile-menu"
+      class="md:hidden fugaz fixed text-center top-[55px] w-full bg-[rgba(10,10,13,0.9)] text-white flex flex-col space-y-2 px-6 py-4
+             transition-transform duration-300 transform -translate-y-full opacity-0 pointer-events-none z-40"
+    >
+      <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      <li><a href="https://neighborhood-detail.square.site/" target="_blank" class="hover:text-yellow-400">Book</a></li>
+    </ul>
+    <div class="mt-20 md:mt-0 bg-[url('/images/car1_tint_more.webp')] bg-no-repeat bg-[length:500px] bg-top md:bg-none w-full min-h-[90vh] md:min-h-[100vh] md:grid grid-cols-2 justify-center text-white">
+      <div class="h-full flex flex-col items-center md:justify-center">
+        <img class="mt-20 md:mt-0 w-full max-w-50 md:max-w-100 h-auto" src="/images/logo_no_text.webp"/> 
+        <!--<h1 class="hidden text-5xl font-bold">Neighborhood Detailing</h1>-->
+        <p class="mt-4 fugaz text-3xl text-[#d8a63d] text-center">Don’t just drive.. drive with a shine!</p>
+        <div class="exo flex text-center font-bold mt-4 text-xl text-gray-300 gap-1">
+          <span class="mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#c4902c" class="icon icon-tabler icons-tabler-filled icon-tabler-trophy">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M17 3a1 1 0 0 1 .993 .883l.007 .117v2.17a3 3 0 1 1 0 5.659v.171a6.002 6.002 0 0 1 -5 5.917v2.083h3a1 1 0 0 1 .117 1.993l-.117 .007h-8a1 1 0 0 1 -.117 -1.993l.117 -.007h3v-2.083a6.002 6.002 0 0 1 -4.996 -5.692l-.004 -.225v-.171a3 3 0 0 1 -3.996 -2.653l-.003 -.176l.005 -.176a3 3 0 0 1 3.995 -2.654l-.001 -2.17a1 1 0 0 1 1 -1h10zm-12 5a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm14 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z" />
+            </svg>
+          </span>
+          The #1 auto detailing specialist in Swansea, MA
+        </div>
+
+        <div class="space-x-10 mt-10">
+          <a href="https://neighborhood-detail.square.site/" target="_blank">
+            <button>
+              <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z" />
+                <path d="M19 16h-12a2 2 0 0 0 -2 2" />
+                <path d="M9 8h6" />
+              </svg>
+              <span class="fugaz text-gray-950">
+                Book Now
+              </span>
+            </button>
+          </a>
+          <a href="#about">
+            <button>
+              <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M8 12l4 4l4 -4" />
+                <path d="M12 8v8" />
+                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+              </svg>
+              <span class="fugaz text-gray-950">
+                Learn More
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="hidden h-full relative md:flex items-center" >
+        <img class="max-h-full w-auto" src="/images/car1_tint.webp"/> 
+        <!--<div class="absolute inset-0 bg-[#0a0a0d] opacity-50"></div>-->
+      </div>
+    </div>
+
+    <div class="px-2 md:px-20 lg:px-40 space-y-30 md:space-y-60">
+
+      <!-- SERVICES -->
+
+      <div class="text-center">
+        <div id="services" class="header">
+          Detailing Services
+        </div>
+        <div class="my-10 exo text-gray-200 text-xl md:text-2xl font-semibold">
+          Providing a range of auto detailing services to meet your needs
+        </div>
+        <div class="md:my-20 grid md:grid-cols-3 gap-10">
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-20 w-auto" src="/images/exterior.webp"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Exterior Detailing
+              <p class="noto mt-5 text-base">
+                Thorough cleaning, polishing and waking of your car's exterior.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-20 w-auto" src="/images/interior.webp"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Interior Detailing
+              <p class="noto mt-5 text-base">
+                Deep-cleaning of seats, carpets and all interior surfaces.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-20 w-auto" src="/images/paint.webp"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Paint Protection
+              <p class="noto mt-5 text-base">
+                Application of wax or ceramic coat to protect paint.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-24 w-auto" src="/images/clay.png"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Clay Bar Treatment
+              <p class="noto mt-5 text-base">
+                Smooth out any blemishes and restore your vehicle
+              </p>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-24 w-auto" src="/images/disinfect.webp"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Decontamination Wash
+              <p class="noto mt-5 text-base">
+                Deep cleaning to removes harmful contaminants from a car's exterior. <br\>Prevents damage to a car's paint and ceramic coating
+              </p>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-24 w-auto" src="/images/suv.webp"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Large or Mid Size SUV
+              <p class="noto mt-5 text-base">
+              </p>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div class="flex justify-center">
+              <img class="h-24 w-auto" src="/images/presidential.webp"/> 
+            </div>
+            <div class="exo text-2xl font-bold text-gray-200">
+              Presidential Detail Service
+              <p class="noto mt-5 text-base">
+                All inclusive: Wash / wax, Door jams, Engine Bay, Trunk Jams, Vacuum, Dashboard / Vinyl, Wheels, Tires, Upholstery / Leather cleaning & conditioning
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+
+      <div class="flex justify-center">
+        <div class="md:grid grid-cols-2 gap-10">
+          <div id="about" class="noto space-y-10 md:text-xl text-gray-200 font-semibold flex flex-col justify-between w-full">
+            <p class="text-center md:text-left header">
+              About Us
+            </p>
+            <p>
+              Is your car, boat, or motorcycle in need of some serious attention?<br/>
+              Neighborhood Detailing brings the showroom shine directly to you!<br/><br/>
+              Since opening in Swansea, MA in July 2023, we've been committed to providing meticulous mobile detailing.<br/><br/>
+              We use top-quality products to rejuvenate your vehicle’s paint and leave your interior spotless. Get ready to roll out the red carpet –
+              Neighborhood Detailing will have you driving with pride!<br/><br/>
+              "Don’t just drive your vehicle…..Drive with a shine!"
+            </p>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="h-auto w-full rounded-3xl" src="/images/car2.webp"/> 
+        </div>
+      </div>
+
+      <!-- OUR WORK -->
+
+      <div class="space-y-10 md:space-y-20">
+        <div class="text-center header">
+          Our Work
+          <p class="my-10 exo text-gray-200 text-xl md:text-2xl font-semibold">
+            Checkout images from our detail work below!
+          </p>
+        </div>
+        <div id="gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-h-[600px] overflow-y-auto"></div>
+      </div>
+
+      <!-- TESTIMONIALS -->
+
+      <div class="space-y-10 md:space-y-20">
+        <p class="text-center header">
+          Testimonials
+        </p>
+        <div class="space-y-10 sm:space-y-0 exo text-xl md:text-2xl text-center md:grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 lg:px-30">
+          <div>
+            <div class="flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="#c4902c" class="icon icon-tabler icons-tabler-filled icon-tabler-quote">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" />
+                <path d="M18 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" />
+              </svg>
+            </div>
+            <p>
+              "Excellent service, very thorough and takes pride in work.<br/>Would highly recommend!"
+            </p>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="#c4902c" class="icon icon-tabler icons-tabler-filled icon-tabler-quote">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" />
+                <path d="M18 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" />
+              </svg>
+            </div>
+            <p>
+              "Hands down the best detailer in the business! We have a contract for continuous cleaning. Shows up to my door every week, guaranteed to keep my vehicles showroom quality year round. Best thing we could have ever done for our fleet.  If you care about keeping your vehicle in pristine condition, get Neighborhood Detailing!!"
+            </p>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="#c4902c" class="icon icon-tabler icons-tabler-filled icon-tabler-quote">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" />
+                <path d="M18 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" />
+              </svg>
+            </div>
+            <p>
+              "My car is as clean as the day I drove it off the dealer’s lot! Hosea cleaned every inch of my car, inside and out.  He is prompt, courteous and meticulous."
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-15">
+          <div class="fugaz flex justify-center">
+            <button class="outlined text-center">
+              <svg class="inline mr-2 mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#e2b34d">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z" />
+              </svg>
+              <a href="https://www.google.com/search?q=neighborhood+detailing+swansea+ma&sca_esv=b9b1559b3529293d&source=hp&ei=WDE6aJvGNvWhptQP1uyP8Ac&iflsig=AOw8s4IAAAAAaDo_aKLiXQvAnb6Zmq4kAQkfALdQVZ4K&ved=0ahUKEwib0uqbn8yNAxX1kIkEHVb2A34Q4dUDCA0&uact=5&oq=neighborhood+detailing+swansea+ma&gs_lp=Egdnd3Mtd2l6IiFuZWlnaGJvcmhvb2QgZGV0YWlsaW5nIHN3YW5zZWEgbWEyAhAmMggQABiiBBiJBTIFEAAY7wUyCBAAGIAEGKIEMggQABiiBBiJBTIFEAAY7wVI8yFQAFiuIXAAeACQAQCYAZUBoAG8FaoBBDI4LjW4AQPIAQD4AQGYAiGgAqsWwgILEAAYgAQYkQIYigXCAgsQLhiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgILEAAYgAQYsQMYgwHCAgUQABiABMICFxAuGIAEGJECGLEDGNEDGIMBGMcBGIoFwgIKEAAYgAQYQxiKBcICDhAuGIAEGLEDGNEDGMcBwgIOEC4YgAQYsQMYgwEYigXCAhEQLhiABBiRAhjHARiKBRivAcICCxAuGIAEGMcBGK8BwgIIEAAYgAQYsQPCAgUQLhiABMICCBAuGIAEGLEDwgIKEC4YgAQYQxiKBcICDhAuGIAEGMcBGI4FGK8BwgIGEAAYFhgewgILEAAYgAQYhgMYigWYAwCSBwQyNC45oAe50QKyBwQyNC45uAerFsIHBzEuMTcuMTXIB1E&sclient=gws-wiz#lrd=0x89e4577e3ee6da4d:0x9aaaab64f2672212,1,,,," target="_blank">
+                LEAVE A REVIEW
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+
+      <div id="contact" class="min-h-200 md:grid grid-cols-2 gap-10">
+        <div id="about" class="noto text-center md:text-left space-y-10 md:text-xl text-gray-200 font-semibold w-full">
+          <p class="text-center md:text-left header">
+            Contact Us
+          </p>
+          <div class="space-y-2">
+            <p>
+              <svg class="inline mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <a href="https://maps.app.goo.gl/QAT9XxLShGKjA8Ke8" target="_blank">
+                419 Wilbur Ave, Swansea MA 02777
+              </a>
+            </p>
+            <div>
+              <svg class="inline mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 7v5" /><path d="M12 12l2 -3" />
+              </svg>
+              Open everyday 9am - 5pm
+            </div>
+            <div>
+              <svg class="inline mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              </svg>
+              <a href="tel:7746442735">
+                (774) 644-2735
+              </a>
+            </div>
+          </div>
+        </div>
+        <iframe class="mt-10 md:mt-0 rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.686157623695!2d-71.2107584239684!3d41.732275571258114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4577e3ee6da4d%3A0x9aaaab64f2672212!2sNeighborhood_Detailing_!5e1!3m2!1sen!2sus!4v1748643174195!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+    <div class="mb-2 exo w-full text-center">
+      Neighborhood Detailing &copy; <span id="year">2025</span> - All Rights Reserved
+    </div>
+    <!-- App Entry -->
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

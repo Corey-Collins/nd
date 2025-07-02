@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Fugaz;
+  src: url(/fonts/FugazOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Exo;
+  src: url(/fonts/Exo2-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(/fonts/NotoSans-VariableFont_wdth,wght.ttf);
+}
+
+.exo {
+  font-family: Exo;
+}
+
+.fugaz {
+  font-family: Fugaz;
+}
+
+.noto {
+  font-family: NotoSans;
+}
+
+:root {
+  scroll-behavior: smooth;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #fefefe;
+  /*background-color: #0a0a0d;*/
+  background-color: #0a0a0d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #e2b34d;
+}
+
+body {
+  margin: 0;
+  /*min-width: 320px;*/
+  /*min-height: 100vh;*/
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-family: inherit;
+  background-color: #c4902c;
+  color: #0a0a0d;
+  @apply md:text-xl cursor-pointer transition-all duration-200 hover:scale-110 active:scale-100;
+}
+
+button.outlined {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-family: inherit;
+  background-color: rgba(0,0,0,0);
+  color: #e2b34d;
+  @apply md:text-xl cursor-pointer border-1 border-[#e2b34d] transition-all duration-200 hover:scale-110 active:scale-100;
+}
+/*button:hover {*/
+/*  border-color: rgb(242, 242, 242);*/
+/*}*/
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.header {
+  font-family: fugaz;
+  @apply text-4xl md:text-5xl text-[#e2b34d];
+}
