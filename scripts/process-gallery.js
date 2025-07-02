@@ -68,8 +68,8 @@ for (const file of files) {
 
   manifest.push({
     name: base,
-    full: `/images/gallery/full/${base}.webp`,
-    thumb: `/images/gallery/thumbnails/${base}.webp`,
+    full: `./images/gallery/full/${base}.webp`,
+    thumb: `./images/gallery/thumbnails/${base}.webp`,
     width: metadata.width,
     height: metadata.height
   });
