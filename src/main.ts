@@ -11,7 +11,7 @@ import 'photoswipe/style.css';
 // });
 
 async function loadGallery() {
-  const res = await fetch("/images/gallery/manifest.json");
+  const res = await fetch("./images/gallery/manifest.json");
   const images = await res.json();
 
   const galleryDiv = document.getElementById("gallery");
