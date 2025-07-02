@@ -97,7 +97,8 @@ toggleBtn?.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-    if (!menu?.contains(e.target) && !toggleBtn?.contains(e.target) && menuOpen) {
+    const target = e.target as Node;
+    if (!menu?.contains(target) && !toggleBtn?.contains(target) && menuOpen) {
         menu?.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
         menu?.classList.remove('translate-y-0', 'opacity-100');
         menuOpen = false;

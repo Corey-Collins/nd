@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "process-gallery": "node scripts/process-gallery.js"
+    "process-gallery": "node scripts/process-gallery.js",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.8",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.8",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
