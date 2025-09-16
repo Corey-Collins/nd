@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "process-gallery": "node scripts/process-gallery.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cp CNAME dist/CNAME && gh-pages -d dist"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.8",
