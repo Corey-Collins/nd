@@ -100,7 +100,11 @@ button {
   font-family: inherit;
   background-color: #c4902c;
   color: #0a0a0d;
-  @apply md:text-xl cursor-pointer transition-all duration-200 hover:scale-110 active:scale-100;
+  @apply md:text-xl cursor-pointer transition-all duration-200 active:scale-100;
+}
+
+button:not(:disabled):hover {
+  transform: scale(1.1);
 }
 
 button.outlined {
@@ -109,7 +113,11 @@ button.outlined {
   font-family: inherit;
   background-color: rgba(0,0,0,0);
   color: #e2b34d;
-  @apply md:text-xl cursor-pointer border-1 border-[#e2b34d] transition-all duration-200 hover:scale-110 active:scale-100;
+  @apply md:text-xl cursor-pointer border-1 border-[#e2b34d] transition-all duration-200 active:scale-100;
+}
+
+button.outlined:not(:disabled):hover {
+  transform: scale(1.1);
 }
 /*button:hover {*/
 /*  border-color: rgb(242, 242, 242);*/

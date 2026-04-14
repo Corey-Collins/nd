@@ -30,8 +30,7 @@
         <ul class="hidden md:flex space-x-6 text-gray-200">
           <li><a href="#about" class="hover:text-yellow-400">About</a></li>
           <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
-          <li><a href="https://neighborhood-detail.square.site/" target="_blank" class="hover:text-yellow-400">Book</a></li>
+          <li><a href="#book" class="hover:text-yellow-400">Book</a></li>
         </ul>
       </div>
     </nav>
@@ -43,13 +42,11 @@
     >
       <li><a href="#about" class="hover:text-yellow-400">About</a></li>
       <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
-      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
-      <li><a href="https://neighborhood-detail.square.site/" target="_blank" class="hover:text-yellow-400">Book</a></li>
+      <li><a href="#book" class="hover:text-yellow-400">Book</a></li>
     </ul>
     <div class="mt-20 md:mt-0 bg-[url('/images/car1_tint_more.webp')] bg-no-repeat bg-[length:500px] bg-top md:bg-none w-full min-h-[90vh] md:min-h-[100vh] md:grid grid-cols-2 justify-center text-white">
       <div class="h-full flex flex-col items-center md:justify-center">
         <img class="mt-20 md:mt-0 w-full max-w-50 md:max-w-100 h-auto" src="/images/logo_no_text.webp"/> 
-        <!--<h1 class="hidden text-5xl font-bold">Neighborhood Detailing</h1>-->
         <p class="mt-4 fugaz text-3xl text-[#d8a63d] text-center">Don’t just drive.. drive with a shine!</p>
         <div class="exo flex text-center font-bold mt-4 text-xl text-gray-300 gap-1">
           <span class="mt-1">
@@ -62,7 +59,7 @@
         </div>
 
         <div class="space-x-10 mt-10">
-          <a href="https://neighborhood-detail.square.site/" target="_blank">
+          <a href="#book">
             <button>
               <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -305,14 +302,64 @@
         </div>
       </div>
 
-      <!-- CONTACT -->
+      <!-- BOOK / CONTACT -->
 
-      <div id="contact" class="min-h-200 md:grid grid-cols-2 gap-10">
+      <div id="book" class="min-h-200 md:grid grid-cols-2 gap-10">
         <div id="about" class="noto text-center md:text-left space-y-10 md:text-xl text-gray-200 font-semibold w-full">
           <p class="text-center md:text-left header">
-            Contact Us
+            Book Your Next Detail
           </p>
           <div class="space-y-2">
+            <div class="">
+              <p class="mb-6 exo text-gray-300">
+                <svg class="inline mb-1 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e2b34d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                  <path d="M3 7l9 6l9 -6" />
+                </svg>
+                <span class="inline">Get in touch or email us at <a href="mailto:neighborhooddetailingcompany@gmail.com" class="text-[#e2b34d] hover:text-[#d8a63d] underline transition-colors">neighborhooddetailingcompany@gmail.com</a></span>
+              </p>
+              <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                <input type="hidden" name="access_key" value="6f32b1d3-d9c2-4261-9b0e-3dbac2d863b2">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    class="w-full px-4 py-3 bg-[rgba(255,255,255,0.1)] border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#e2b34d] focus:ring-1 focus:ring-[#e2b34d] transition-colors"
+                  >
+                  <p class="text-red-400 text-sm mt-1 hidden" data-error="name"></p>
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    class="w-full px-4 py-3 bg-[rgba(255,255,255,0.1)] border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#e2b34d] focus:ring-1 focus:ring-[#e2b34d] transition-colors"
+                  >
+                  <p class="text-red-400 text-sm mt-1 hidden" data-error="email"></p>
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    rows="4"
+                    class="w-full px-4 py-3 bg-[rgba(255,255,255,0.1)] border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#e2b34d] focus:ring-1 focus:ring-[#e2b34d] transition-colors resize-none"
+                  >I'd like to book a detailing service. Please let me know availability and pricing for my vehicle.</textarea>
+                  <p class="text-red-400 text-sm mt-1 hidden" data-error="message"></p>
+                </div>
+                <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
+                <button
+                  type="submit"
+                  class="w-full fugaz bg-[#e2b34d] disabled:hover:bg-[#e2b34d] hover:bg-[#d8a63d] text-gray-950 font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Send Request
+                </button>
+              </form>
+            </div>
             <p>
               <svg class="inline mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -350,8 +397,31 @@
     <div class="mb-2 exo w-full text-center">
       Neighborhood Detailing &copy; <span id="year">2025</span> - All Rights Reserved
     </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-[#0a0a0d] border border-[#e2b34d] rounded-lg p-8 max-w-md mx-4 text-center space-y-6">
+        <div class="flex justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e2b34d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M9 12l2 2l4 -4" />
+          </svg>
+        </div>
+        <div class="space-y-2">
+          <p class="fugaz text-2xl text-[#e2b34d]">Thank You!</p>
+          <p class="noto text-gray-300 text-base">Your booking request has been received.<br/>We'll get back to you as soon as possible.</p>
+        </div>
+        <button id="closeModal" class="w-full fugaz bg-[#e2b34d] hover:bg-[#d8a63d] text-gray-950 font-bold py-3 px-6 rounded-lg transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+
     <!-- App Entry -->
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <!-- Web3Forms hCaptcha Script -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
